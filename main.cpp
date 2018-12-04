@@ -20,7 +20,7 @@ int main(int argc, char * argv[])
   std::vector< std::shared_ptr<Light> > lights;
   // Read a camera and scene description from given .json file
   read_json(
-    argc<=1?"../shared/data/bunny.json":argv[1], //"../src/creative.json"
+    argc<=1?"../shared/data/fishbowl.json":argv[1], //"../src/creative.json"
     camera,
     objects,
     lights);
@@ -36,10 +36,6 @@ int main(int argc, char * argv[])
       printf("%d %d \n", i, j);
       // Set background color
       Eigen::Vector3d rgb(0,0,0);
-
-      // if(i > 310 || i < 260 || j > 310 || j < 260){
-      //   continue;}
-
 
       // Compute viewing ray
       Ray ray;

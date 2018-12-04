@@ -87,7 +87,7 @@
     {
       "type": "soup",
       "material": "matte gray",
-      "stl": "fishbowl_super_reduced.stl"
+      "stl": "simple_fish.stl"
     },
     {
       "type": "plane",
